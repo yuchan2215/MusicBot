@@ -33,7 +33,7 @@ public class SetvcCmd extends AdminCommand
     public SetvcCmd(Bot bot)
     {
         this.name = "setvc";
-        this.help = "sets the voice channel for playing music";
+        this.help = "音楽を聴くためのボイスチャンネルを設定します";
         this.arguments = "<channel|NONE>";
         this.aliases = bot.getConfig().getAliases(this.name);
     }

@@ -34,7 +34,7 @@ public class AutoplaylistCmd extends OwnerCommand
         this.guildOnly = true;
         this.name = "autoplaylist";
         this.arguments = "<name|NONE>";
-        this.help = "sets the default playlist for the server";
+        this.help = "デフォルトプレイリストを設定します";
         this.aliases = bot.getConfig().getAliases(this.name);
     }
 

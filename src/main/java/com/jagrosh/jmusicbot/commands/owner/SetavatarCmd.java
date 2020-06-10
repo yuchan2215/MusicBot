@@ -32,7 +32,7 @@ public class SetavatarCmd extends OwnerCommand
     public SetavatarCmd(Bot bot)
     {
         this.name = "setavatar";
-        this.help = "sets the avatar of the bot";
+        this.help = "Botのアバターを設定します";
         this.arguments = "<url>";
         this.aliases = bot.getConfig().getAliases(this.name);
         this.guildOnly = false;

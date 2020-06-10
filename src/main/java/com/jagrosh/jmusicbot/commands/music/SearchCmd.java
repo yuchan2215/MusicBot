@@ -48,7 +48,7 @@ public class SearchCmd extends MusicCommand
         this.name = "search";
         this.aliases = bot.getConfig().getAliases(this.name);
         this.arguments = "<query>";
-        this.help = "searches Youtube for a provided query";
+        this.help = "YouTubeで曲を検索します";
         this.beListening = true;
         this.bePlaying = false;
         this.botPermissions = new Permission[]{Permission.MESSAGE_EMBED_LINKS};
@@ -64,10 +64,10 @@ public class SearchCmd extends MusicCommand
     {
         if(event.getArgs().isEmpty())
         {
-            event.replyError("Please include a query.");
+            event.replyError("検索ワードを含めてください。");
             return;
         }
-        event.reply(searchingEmoji+" Searching... `["+event.getArgs()+"]`", 
+        event.reply(searchingEmoji+" 検索中... `["+event.getArgs()+"]`",
                 m -> bot.getPlayerManager().loadItemOrdered(event.getGuild(), searchPrefix + event.getArgs(), new ResultHandler(m,event)));
     }
     

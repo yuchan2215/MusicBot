@@ -29,7 +29,7 @@ public class SetgameCmd extends OwnerCommand
     public SetgameCmd(Bot bot)
     {
         this.name = "setgame";
-        this.help = "sets the game the bot is playing";
+        this.help = "プレイ中のゲームを設定します";
         this.arguments = "[action] [game]";
         this.aliases = bot.getConfig().getAliases(this.name);
         this.guildOnly = false;
@@ -62,7 +62,7 @@ public class SetgameCmd extends OwnerCommand
         {
             this.name = "stream";
             this.aliases = new String[]{"twitch","streaming"};
-            this.help = "sets the game the bot is playing to a stream";
+            this.help = "配信中のカスタムステータスを設定します";
             this.arguments = "<username> <game>";
             this.guildOnly = false;
         }
@@ -95,7 +95,7 @@ public class SetgameCmd extends OwnerCommand
         {
             this.name = "listen";
             this.aliases = new String[]{"listening"};
-            this.help = "sets the game the bot is listening to";
+            this.help = "聴いているカスタムステータスを設定します";
             this.arguments = "<title>";
             this.guildOnly = false;
         }
@@ -125,7 +125,7 @@ public class SetgameCmd extends OwnerCommand
         {
             this.name = "watch";
             this.aliases = new String[]{"watching"};
-            this.help = "sets the game the bot is watching";
+            this.help = "視聴中のカスタムステータスを設定します";
             this.arguments = "<title>";
             this.guildOnly = false;
         }
